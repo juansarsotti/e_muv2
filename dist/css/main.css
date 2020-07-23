@@ -11193,22 +11193,84 @@ img {
 }
 
 /* Navbar */
+body {
+  background-color: #eaeaea;
+}
+
 header {
-  height: 5.625rem;
-  border: 1px solid black;
-  width: 100%;
+  background-color: #ffffff;
+  color: #00a887;
 }
 
 header nav {
-  width: 100%;
+  font-weight: 600;
+  color: #00a887;
+  font-size: 0.8125rem;
 }
 
-header nav ul li a.btn {
-  color: #00A887;
-  border: 0.125rem solid #00A887;
+header nav .navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #00a887;
 }
 
-header .navbar-toggler-icon span {
-  color: red;
+header nav ul li {
+  margin-right: 2.5rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li:last-of-type {
+  margin-right: 0rem;
+}
+
+header nav ul li a {
+  color: #012f3a;
+  padding: 0rem;
+}
+
+header nav ul li a span {
+  color: #00a887;
+}
+
+header nav ul li a:hover {
+  color: #00a887;
+}
+
+header nav ul li .btn {
+  border: 0.125rem solid #00a887;
+  font-weight: 600;
+  height: 100%;
+}
+
+header nav ul li .btn:hover {
+  background-color: #00a887;
+}
+
+header nav ul li .btn img {
+  margin-left: 0.3125rem;
+}
+
+header nav .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 168, 135, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+header nav .custom-toggler.navbar-toggler {
+  border-color: #00a887;
+}
+
+@media only screen and (max-width: 992px) {
+  li.nav-item {
+    margin-right: 0rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
