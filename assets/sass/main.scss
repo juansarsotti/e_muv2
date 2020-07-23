@@ -1,0 +1,134 @@
+@import '../../node_modules/sass-rem/rem';
+@import './normalize';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+/* -- Variables -- */
+
+/* Colores */
+$primario: #00A887;
+$blanco: #FFFFFF;
+$secundario: #012F3A;
+$gris-claro1: #F6F6F6;
+$gris-claro2: #EAEAEA;
+$azul: #0A169A;
+$amarillo: #F4CF00;
+$primario-light: #70D9C4;
+$negro: #000000;
+
+/* Dev var como placeholder */
+@mixin placehold {
+    background-color: grey;
+}
+/* Fuentes */
+$fuente-principal: 'Roboto', sans-serif;
+
+/* -- Herramientas -- */
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- Reglas Generales -- */
+
+/* Reset */
+html {
+    font-family: $fuente-principal;
+    font-size: rem(18px);
+    font-weight: 700;
+    * {
+        list-style-type: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+}
+
+/* Globales */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.social-icon {
+    width: rem(22px);
+    height: rem(22px);
+}
+
+/* Navbar */
+
+header {
+    height: rem(90px);
+    border: 1px solid black;
+    width: 100%;
+    nav {
+        width: 100%;
+        ul {
+            li {
+                a.btn{
+                    color: $primario;
+                    border: rem(2px solid $primario);
+                    &:hover
+                }
+            }
+        }
+    }
+    .navbar-toggler-icon span {
+        color: red;
+    }
+    
+}
+
+// header {
+//     background-color: $blanco;
+//     border: rem(1px solid black);
+//     width: rem(100%);
+//     .navbar-brand {
+//         height: rem(90px);
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         margin: rem(0px 81px);
+
+//         .brand-logo {
+//             height: rem(26px);
+//             width: rem(130px);
+//             @include placehold();
+//         }
+//         .nav-list {
+//             display: flex;
+//             align-items: center;
+//             justify-self: center;
+//             color: $secundario;
+//             a {
+//                 color: $secundario;
+//             }
+//             .nav-item {
+//                 @include flex-center();
+//                 margin-right: rem(40px);
+//                 font-size: rem(13px);
+//                 &:last-of-type{
+//                     margin-right: none;
+//                 }
+//                 a {
+//                     @include flex-center();
+//                 }
+//                 img {
+//                     margin-right: rem(11px);
+//                 }
+//             }
+//             .btn {
+//                 border: rem(2px solid $primario);
+//                 width: rem(153px);
+//                 height: rem(47px);
+//                 border-radius: 4px;
+//                 img {
+//                     margin-right: rem(0px);
+//                     margin-left: rem(12px);
+//                 }
+//             }
+//         }
+//     }
+// }
